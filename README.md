@@ -15,12 +15,11 @@ It’s a blend of:
 - **Fun demo** – demonstrates LaTeX skills while keeping things a little more memorable
 
 ## 📂 Files
-- `resume.tex` – main LaTeX file  
-- `resume.pdf` – compiled example  
-- `README.md` – you’re reading it
-
-## 🔗 Live Preview
-You can view the compiled PDF [here](LINK_TO_PDF).
+- `resume.tex` – main LaTeX file
+[click here to see it (resume.tex)](resume.tex) 
+- `resume.pdf` – compiled example
+[click here to see it (resume.pdf)](resume.pdf)  
+- `README.md` – you’re reading it :)
 
 ## 🚀 Edit on Overleaf
 Want to make your own version without installing anything?  
