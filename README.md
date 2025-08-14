@@ -1,5 +1,7 @@
 # 🐾 Cat-Inspired Professional Resume (LaTeX)
 
+![Resume Preview](resume.png)
+
 This project is a fully coded resume created in **LaTeX**, originally based on my real CV but adapted for a highly qualified cat (yes, really, because why not?). 
 It’s a blend of:
 - Professional ATS-friendly formatting with a touch of personality through colour accents
