@@ -1,0 +1,193 @@
+% ========================================
+% Resume Template by ladasmereca on github and overleaf
+% Built in Overleaf (super beginner-friendly!) but also works in any LaTeX editor
+% Recommended: Overleaf for visual preview while coding, but any platform is fine 
+% Repo: https://github.com/ladasmereca/simple_latex_resume
+% Overleaf Project Link: https://www.overleaf.com/read/mfcdqrqntgbt#687f55
+%
+% How to use this file:
+% - Edit the content inside {curly brackets} to make it yours
+% - Comments starting with "%" explain how to tweak styles (colors, fonts, spacing, etc.) - you can delete the, if you want
+% - Everything is kept in a single file for simplicity
+% ========================================
+
+\documentclass[11pt,a4paper]{article} % font size = 11pt, paper size = A4
+
+% ------- ENCODING AND LANGUAGE -------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel} % Change "british" to "american" for US spelling
+
+% ------- FONT -------
+\usepackage{lmodern} % clean sans-serif font; try 'mathpazo' for serif look
+
+% ------- PAGE LAYOUT -------
+\usepackage[a4paper,margin=15mm]{geometry} % adjust margin here
+\usepackage{microtype} % better spacing
+\usepackage{setspace}
+\setstretch{1.05} % line spacing; change number for tighter/looser lines
+\setlength{\parskip}{0.6ex plus 0.2ex minus 0.1ex}
+
+% ------- COLORS -------
+% You can google some nice colour combos or just play around :)
+\usepackage{xcolor}
+\definecolor{duskPurple}{HTML}{7B5F82} % section titles
+\definecolor{dawnPink}{HTML}{D996AF} % links
+\definecolor{dawnPinkLight}{HTML}{F8E4EE} % highlight backgrounds (optional)
+
+% ------- LINKS -------
+\usepackage[colorlinks=true, urlcolor=dawnPink]{hyperref}
+
+% ------- LIST STYLES -------
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.2em}
+
+% ------- MULTI-COLUMN LAYOUT -------
+\usepackage{paracol} % for main two-column layout
+\setlength{\columnsep}{30pt}
+
+\usepackage{multicol} % for any list, if you need them in two columns
+\usepackage{tabularx} % for work experience layout
+
+% ------- PAGE NUMBERS -------
+\pagenumbering{gobble} % removes page numbers - you can remove this if you want them!
+
+\setlength{\parindent}{0pt} % no paragraph indentation
+
+% ------- SECTION TITLES -------
+\newcommand{\sectiontitle}[1]{%
+  \vspace{1.2ex}%
+  {\Large\bfseries\color{duskPurple} #1}%
+  \vspace{0.6ex}\hrule\vspace{0.8ex}%
+}
+
+% ------- EXPERIENCE BLOCK -------
+\newcommand{\experience}[3]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1} & {\small #3} \\
+    \multicolumn{2}{@{}l@{}}{\textit{#2}} \\
+  \end{tabularx}\vspace{0.2ex}
+}
+
+% ------- DOCUMENT BEGINNING -------
+\begin{document}
+
+% ------- HEADER -------
+\begin{center}
+    {\huge \bfseries Extra Cool Cat} \\[0.6ex]
+    \textcolor{duskPurple}{Purrfessional Organizer | Nap Strategist Extraordinaire} \\[0.8ex]
+    \href{mailto:extracoolcat@gmail.com}{that's my email} \quad
+    \href{https://linkedin.com/in/extracoolcat}{here's my linkedin}
+\end{center}
+% Tip: You can add GitHub or portfolio links here if you want :D
+
+% ------- SUMMARY -------
+\vspace{-1ex}
+\sectiontitle{Summary}
+Curious, detail-oriented feline with 5+ years prowling the realms of operations, documentation, and translation. Transitioning gracefully into data analytics and workflow optimization, always on the hunt for efficient processes. Passionate about coding, arts, and napping in sunbeams.  
+\textit{(Fun fact: can chase down bugs in code as fast as a laser dot!)}
+\textit{(Fun fact 2: this is my first time using LaTeX and like second month coding anything!)}
+
+\vspace{1ex} % that helps everything have some gaps to be readable. If you ever find some place where you want more or less of a gap - stick that there and put either positive (more space) or negative value (less space) in the {}
+
+% ------- TWO-COLUMN LAYOUT -------
+\begin{paracol}{2} 
+
+% ------- LEFT COLUMN ------- 
+\sectiontitle{Skills}
+\vspace{-1.3ex}
+\begin{itemize}
+  \item \textbf{Paw-sitive Attention to Detail}: nothing escapes my watchful eyes (or whiskers)
+  \item \textbf{Data Hunting}: sniffing out patterns in spreadsheets and reports
+  \item \textbf{Automation Claws:} swiping repetitive tasks away
+  \item \textbf{Soft Skills:} purrfect communication, tail-friendly teamwork
+   \item \textbf{Cross-domain Expertise:} finance, education, psychology, human behavior observation
+\end{itemize}
+
+\vspace{0.6ex}
+
+\sectiontitle{Certifications}
+\vspace{-1.3ex}
+\begin{itemize}
+  \item \textbf{Journey into Playtunnels} -- CatSignal, 2025 (in progress)
+  \item \textbf{R Programming for Cats} -- Simplicats, 2025 (in progress)
+  \item \textbf{Python Bronze Level} -- Catch-a-snake, 2025
+  \item \textbf{Hissing for Dummies (Basic \& Advanced)}
+  \item \textbf{Certificate of Best Nap Buddy}
+  \item \textbf{Human Language} (Fluent)
+\end{itemize}
+\vspace{-1ex}
+\textit{More clawsome certifications listed on LinkedIn.}  % Tip: link if you want, copy the needed part from the header
+
+\vspace{0.6ex}
+
+\sectiontitle{Education}
+\textbf{University of the Salmon} \hfill \small 2022 -- 2024 \\
+Bachelor of Nap Sciences 
+
+\vspace{0.6ex}
+
+\textbf{Tuna National University} \hfill \small 2018 -- 2022 \\
+Bachelor of Human Behaviour
+
+\vspace{0.6ex}
+
+\sectiontitle{Interests}
+\vspace{-1ex}
+\begin{itemize}[leftmargin=*, nosep]
+\item • Chasing laser dots • Sunbeam lounging \& cat naps 
+\vspace{-1ex}
+\item • Observing humans • Pouncing on opportunities
+\vspace{-1ex}
+\item • Meowing at closed doors • Catching feathers 
+\vspace{-1ex}
+\item • Baking (human treats taste test) • Lifelong curiosity
+\end{itemize}
+
+\vfill
+{\tiny\color{gray}Typeset in \LaTeX} 
+% I added this because this shows recruiters your resume was made with Latex - otherwise, they have no way of knowing :( you can delete that if you'd like
+
+%  ------- RIGHT COLUMN -------
+\switchcolumn
+
+\sectiontitle{Work Experience}
+
+\experience{Chief Mouse Tracker}{Meow Advertising}{Aug 2025 -- Present}
+\vspace{-3ex}
+\begin{itemize}
+  \item Patrolled spreadsheets and reports, ensuring no anomaly escapes detection. 
+   \item Streamlined repetitive tasks, swiping away inefficiencies by 15\%. 
+   \item Maintained real-time tracking tools (Google Sheets hehe) to spot lurking overdue accounts. 
+   \item Authored clear “paw-scripts” to help new kittens onboard faster. 
+   \item Updated templates to optimize workflow, cutting revision cycles by 10\%.
+\end{itemize}
+
+\vspace{0.3ex}
+
+\experience{Purroject Coordinator}{LitterBoxd}{Sep 2024 -- Aug 2025}
+\vspace{-3ex}
+\begin{itemize}
+  \item Translated \& certified 200+ educational and human documents with feline precision.
+  \item Designed templates and file-naming systems, making the job funnier by 15\%.
+  \item Developed a Notion-based knowledge hub adopted throughout the company, making everyone a cat.
+  \item Automated Google Sheets workflows to catch more mice by 70\%. 
+  \item Mentored four new kittens, ensuring smooth integration. 
+\end{itemize}
+
+\vspace{0.3ex}
+% Don't forget to change the date!
+\experience{Office Nap Manager}{SleepyCo.}{Jul 2022 -- Aug 2024} 
+\vspace{-3ex}
+\begin{itemize}
+  \item Oversaw daily operations for 60+ humans, ensuring smooth logistics.
+  \item Created an internal operations guide, cutting onboarding time by 50\%
+  \item Negotiated vendor treats contracts for cost-efficient procurement. 
+  \item Streamlined workflows, reducing bottlenecks and keeping humans happy. 
+\end{itemize}
+
+\textbf{Volunteer work/Projects:} coordination, mental help and endless purring :).
+
+\end{paracol}
+
+\end{document}
